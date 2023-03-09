@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
+      - name: chnage permissions
+        run: chmod u+x test.py
       - name: run scripts
         run: ./test.py
