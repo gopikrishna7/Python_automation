@@ -1,0 +1,10 @@
+name: run python scripts
+on: [push]
+jobs:
+  python-scripts:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: run scripts
+        run: ./test.py
