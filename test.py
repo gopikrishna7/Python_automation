@@ -1,14 +1,6 @@
 #!/usr/bin/env python3
 
-
-import requests
-
-r = requests.get("http://example.com")
-
-if r.status_code==200:
-    print("Everything Looks Good!")
-else:
-    print("Something went wrong!")
-
-
-
+file = open ("text.txt")
+content= file.read()
+file.close()
+print(content)
